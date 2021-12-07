@@ -1,0 +1,17 @@
+{
+  "name": "advent-of-code-2021",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Advent of code 2021 challenge",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "author": "@fjavierlh",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^17.2.0",
+    "node-fetch": "^3.1.0"
+  }
+}
