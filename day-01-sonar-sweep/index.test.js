@@ -1,4 +1,4 @@
-import {getNumberMeasurementsIncrease, getSumByThreeMeasurementsIncrease} from ".";
+import {getNumberMeasurementsIncrease, getSumByThreeMeasurements} from ".";
 
 describe("getNumberMeasurementsIncrease", () => {
   test("should return number of measurements increasse of given array of numbers", () => {
@@ -12,7 +12,7 @@ describe("getThreeMeasurementsIncrease", () => {
   test("should return an array with number sum grouped by three of given array of numbers", () => {
     const mockInputData = [100, 200, 300, 400, 500];
     const expectedResult = [600, 900, 1200, 900, 500];
-    const result = getSumByThreeMeasurementsIncrease(mockInputData);
+    const result = getSumByThreeMeasurements(mockInputData);
     expect(result).toMatchObject(expectedResult);
   });
 });

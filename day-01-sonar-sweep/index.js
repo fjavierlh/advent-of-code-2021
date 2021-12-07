@@ -10,7 +10,7 @@ export const getNumberMeasurementsIncrease = (input) => {
   return increaseMeasurementCounter;
 };
 
-export const getSumByThreeMeasurementsIncrease = (input) => {
+export const getSumByThreeMeasurements = (input) => {
   return input.map((measurement, i) => {
     const nextMeasurement = input[i + 1] || 0;
     const nextToNextMeasurement = input[i + 2] || 0;
