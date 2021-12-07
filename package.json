@@ -11,7 +11,9 @@
   "author": "@fjavierlh",
   "license": "ISC",
   "dependencies": {
-    "node": "^17.2.0",
-    "node-fetch": "^3.1.0"
+    "node": "^16.13.1"
+  },
+  "devDependencies": {
+    "jest": "^27.4.3"
   }
 }
