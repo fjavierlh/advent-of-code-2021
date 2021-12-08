@@ -15,5 +15,10 @@ export const getSumByThreeMeasurements = (input) => {
     const nextMeasurement = input[i + 1] || 0;
     const nextToNextMeasurement = input[i + 2] || 0;
     return measurement + nextToNextMeasurement + nextMeasurement;
-  })
-}
+  });
+};
+
+export const getNumberMeasurementsIncreaseByThree = (input) => {
+  const transformedInput = getSumByThreeMeasurements(input);
+  return getNumberMeasurementsIncrease(transformedInput);
+};
