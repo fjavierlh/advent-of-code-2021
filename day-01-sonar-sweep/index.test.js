@@ -1,10 +1,19 @@
-import {getNumberMeasurementsIncrease, getSumByThreeMeasurements} from ".";
+import {getNumberMeasurementsIncrease, getNumberMeasurementsIncreaseByThree, getSumByThreeMeasurements} from ".";
 
 describe("getNumberMeasurementsIncrease", () => {
   test("should return number of measurements increasse of given array of numbers", () => {
     const mockInputData = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
     const result = getNumberMeasurementsIncrease(mockInputData);
     expect(result).toBe(7);
+  });
+});
+
+
+describe("getNumberMeasurementsIncreaseByThree", () => {
+  test("should return number of measurements increasse of given array of numbers", () => {
+    const mockInputData = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
+    const result = getNumberMeasurementsIncreaseByThree(mockInputData);
+    expect(result).toBe(5);
   });
 });
 
